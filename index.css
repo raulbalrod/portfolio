@@ -223,14 +223,14 @@ footer ul{
     margin-right: 5px;
 }
 .ext{
-    width: 160px; height: 8px;
+    width: 160px; height: 15px;
     background-color: #5e5e5e;
     border-radius: 25px;
     padding: 1px 1px;
     margin-left: 10px;
 }
 .int{
-    height: 8px;
+    height: 15px;
     background-color: #4ef01d;
     border-radius: 25px;
 }
@@ -524,7 +524,6 @@ footer ul{
         text-align: left;
     }
 
-
     #About {
         width: 100%;
     }
@@ -567,112 +566,6 @@ footer ul{
         display: flex;
         justify-content: left;
     }
-
-    
-    .row {
-        display: flex;
-        flex-direction: column;
-    }
-    .container {
-        max-width: 100%;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-    }
-    .cards {
-        flex-wrap: wrap;
-        gap: 2em;
-        padding: 2em 0;
-        margin: auto;
-    }
-    .card {
-        align-items: flex-end;
-        justify-content: center;
-        width: 300px;
-        min-height: 420px;
-        text-align: center;
-        overflow: hidden;
-        background-color: none  ;
-        background-repeat: no-repeat;
-        background-size: cover;
-        border-radius: 25px;
-        transition: max-width 0.5s ease-in-out;
-    }
-    .card:hover{
-        max-width: 300px;
-    }
-    .card:hover .title {
-        all: unset;
-    }
-    .title-h2 {
-        font-size: clamp(38px, 5vw, 48px);
-        color: #fff;
-        text-transform: uppercase;
-        white-space: nowrap;
-        margin-top: auto;
-        margin-bottom: auto;
-        margin-top: 50px;
-    }
-    .card:hover .title-h2{
-        padding-bottom: 0.5em;
-        transform: unset;
-        margin-top: 50px;
-    }
-    .title-p {
-        position: absolute;
-        font-size: 15px;
-        margin: 0;
-        max-height: 0;
-        opacity: 0;
-        transition: max-height 0.3s ease-in-out;
-    }
-    .card:hover p {
-        position: relative;
-        color: #fff;
-        opacity: 1;
-        max-height: 100%;
-        transition-delay: 0.3s;
-        margin: 5px 25px;
-    }
-    .lenguajes {
-        display: flex;
-        justify-content: center;
-        opacity: 0;
-        margin-top: 15px;
-        gap: 15px;
-    }
-    .card:hover .lenguajes {
-        opacity: 1;
-    }
-    .button-card {
-        display: flex;
-        justify-content: center;
-        opacity: 0;
-        margin-top: 25px;
-        gap: 15px;
-        color: #fff;
-    }
-    .card:hover .button-card {
-        opacity: 1;
-    }
-    .card:hover .button-demo, .card:hover .button-repository {     
-        border: 3px solid #ffffff;
-        border-radius: 25px;
-        width: 30%;
-        padding: 10px auto;
-        margin-bottom: 20px;
-    }
-    .card:hover .button-demo a, .card:hover .button-repository a{
-        text-decoration: none; 
-        color: #fff;
-    }
-    .card:hover .button-demo:hover, .card:hover .button-repository:hover {
-        background-color: rgba(255, 255, 255, 0.4);
-        transition: 0.5s;
-        transition-delay: 0s;
-        cursor: pointer; 
-    }
-
 
     .enterprise {
         display: flex;
@@ -743,7 +636,7 @@ footer ul{
 	
 .tpl-snow > div{position:fixed;-webkit-animation:ease-in infinite normal;-moz-animation:ease-in infinite normal;animation:ease-in infinite normal;}	
 
-.tpl-snow > div{z-index:-1;width:10px;height:10px;-moz-border-radius:50%;-webkit-border-radius:50%;border-radius:50%;background-color:#4ef01d;-webkit-animation-name:nieve,horiz;-moz-animation-name:nieve,horiz;animation-name:nieve,horiz;}
+.tpl-snow > div{z-index:-1;width:10px;height:10px;-moz-border-radius:50%;-webkit-border-radius:50%;border-radius:50%;background-color:rgba(78, 240, 29, 0.247);-webkit-animation-name:nieve,horiz;-moz-animation-name:nieve,horiz;animation-name:nieve,horiz;}
 .tpl-snow > div:nth-of-type(odd){width:5px; height:5px;-webkit-animation-name:nieve,horiz2;-moz-animation-name:nieve,horiz2;animation-name:nieve,horiz2;}
 
 .tpl-snow > div:nth-of-type(1){left:40px;-webkit-animation-duration:5.5s;-moz-animation-duration:5.5s;animation-duration:5.5s;-webkit-animation-delay:1s;-moz-animation-delay:1s;animation-delay:1s;}
