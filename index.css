@@ -208,9 +208,9 @@ footer ul{
     border-radius: 35px;
 }
 .content-About:hover {
-    background-color: #4ef01d21;
-    transition-duration: 1s;
+    box-shadow: inset 0px 0px 0px 2px #8af16a;
     cursor: pointer;
+    transition-duration: 1s;
 }
 
 /* Skills */
@@ -223,20 +223,21 @@ footer ul{
     margin-right: 5px;
 }
 .ext{
-    width: 160px; height: 15px;
+    width: 160px; height: 10px;
     background-color: #5e5e5e;
     border-radius: 25px;
     padding: 1px 1px;
     margin-left: 10px;
 }
 .int{
-    height: 15px;
+    height: 10px;
     background-color: #4ef01d;
     border-radius: 25px;
 }
 .sectionLenguages{
     display: flex;
-    margin: 30px 45px;
+    justify-content: space-between;
+    margin: 30px;
 }
 .studies_section {
     padding: 50px 0;
@@ -256,9 +257,9 @@ footer ul{
     margin: 30px 15px;
 }
 .study_card:hover {
-    background-color: #4ef01d21;
-    transition-duration: 1s;
+    box-shadow: inset 0px 0px 0px 2px #8af16a;
     cursor: pointer;
+    transition-duration: 1s;
 }
 .logo {
     background-color: transparent;
@@ -286,9 +287,9 @@ footer ul{
     padding: 5px 20px;
 }
 .enterprise:hover {
-    background-color: #4ef01d21;
-    transition-duration: 1s;
+    box-shadow: inset 0px 0px 0px 2px #8af16a;
     cursor: pointer;
+    transition-duration: 1s;
 }
 .logo-enterprise {
     background-color: transparent;
@@ -520,6 +521,9 @@ footer ul{
         margin-bottom: 15px;
         margin-top: 15px;
     }
+    .description-left h3 {
+        text-align: left;
+    }
     .description-right p {
         text-align: left;
     }
@@ -533,7 +537,7 @@ footer ul{
         margin: 0;
     }
     .content-About {
-        width: 250px;
+        width: 90%;
         margin-top: 25px;
     }
 
@@ -549,7 +553,7 @@ footer ul{
         margin-top: 50px;
     }
     .study_card {
-        width: 250px;
+        width: 90%;
         height: 100px;
     }
     .study_card .logo {
@@ -570,7 +574,7 @@ footer ul{
     .enterprise {
         display: flex;
         flex-direction: column;
-        width: 300px;
+        width: 90%;
         height: 500px;
         text-align: center;
     }
@@ -584,6 +588,61 @@ footer ul{
     .experiences_content h2 {
         margin-top: 10px;
         margin-bottom: 15px;
+    }
+
+    .projects-container-mobile {
+        margin: 50px 50px;
+        display: flex;
+        flex-direction: column;
+    }
+    .project-h2{
+        color: #d4d4d4;
+    }
+    .kotlin{
+        justify-content: space-between;
+        align-items: flex-start;
+        color: #d4d4d4;
+        margin-top: 25px;
+    }
+    .right-projects-mobile{
+        background-color: #171b1e;
+        width: 90%;
+        border-radius: 25px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+    .left-projects-mobile h1, .left-projects-mobile p{
+        margin-bottom: 10%;
+    }
+    .button-repository-mobile{
+        background-color: #171b1e;
+        width: 90%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-radius: 10px;
+        text-align: center;
+    }
+    .button-repository-mobile a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .button-repository-mobile:hover, .right-projects-mobile:hover{
+        box-shadow: inset 0px 0px 0px 2px #8af16a;
+        cursor: pointer;
+    }
+    .container{
+        display: none;
+    }
+    .left-projects-mobile h4 {
+        margin-bottom: 15px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .projects-container-mobile{
+        display: none;
     }
 }
 
