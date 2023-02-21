@@ -208,11 +208,13 @@ footer ul{
     border-radius: 35px;
 }
 .content-About:hover {
-    box-shadow: inset 0px 0px 0px 2px #8af16a;
+    box-shadow: inset 0px 0px 0px 2px #4ef01d;
     cursor: pointer;
     transition-duration: 1s;
 }
-
+.description-left h5, .description-left h3 {
+    text-align: center;
+}
 /* Skills */
 .lenguage{
     display: flex;
@@ -257,7 +259,7 @@ footer ul{
     margin: 30px 15px;
 }
 .study_card:hover {
-    box-shadow: inset 0px 0px 0px 2px #8af16a;
+    box-shadow: inset 0px 0px 0px 2px #4ef01d;
     cursor: pointer;
     transition-duration: 1s;
 }
@@ -287,7 +289,7 @@ footer ul{
     padding: 5px 20px;
 }
 .enterprise:hover {
-    box-shadow: inset 0px 0px 0px 2px #8af16a;
+    box-shadow: inset 0px 0px 0px 2px #4ef01d;
     cursor: pointer;
     transition-duration: 1s;
 }
@@ -539,8 +541,11 @@ footer ul{
     .content-About {
         width: 90%;
         margin-top: 25px;
+        height: 300px;
     }
-
+    .ext {
+        width: 100px;
+    }
     #studies {
         width: 100%;
     }
@@ -606,7 +611,7 @@ footer ul{
     }
     .right-projects-mobile{
         background-color: #171b1e;
-        width: 90%;
+        width: 100%;
         border-radius: 25px;
         margin-top: 25px;
         margin-bottom: 25px;
@@ -630,6 +635,7 @@ footer ul{
     .button-repository-mobile:hover, .right-projects-mobile:hover{
         box-shadow: inset 0px 0px 0px 2px #8af16a;
         cursor: pointer;
+        transition-duration: 1s;
     }
     .container{
         display: none;
@@ -695,7 +701,7 @@ footer ul{
 	
 .tpl-snow > div{position:fixed;-webkit-animation:ease-in infinite normal;-moz-animation:ease-in infinite normal;animation:ease-in infinite normal;}	
 
-.tpl-snow > div{z-index:-1;width:10px;height:10px;-moz-border-radius:50%;-webkit-border-radius:50%;border-radius:50%;background-color:rgba(78, 240, 29, 0.247);-webkit-animation-name:nieve,horiz;-moz-animation-name:nieve,horiz;animation-name:nieve,horiz;}
+.tpl-snow > div{z-index:-1;width:10px;height:10px;-moz-border-radius:50%;-webkit-border-radius:50%;border-radius:50%;background-color:rgba(78, 240, 29, 0.3);-webkit-animation-name:nieve,horiz;-moz-animation-name:nieve,horiz;animation-name:nieve,horiz;}
 .tpl-snow > div:nth-of-type(odd){width:5px; height:5px;-webkit-animation-name:nieve,horiz2;-moz-animation-name:nieve,horiz2;animation-name:nieve,horiz2;}
 
 .tpl-snow > div:nth-of-type(1){left:40px;-webkit-animation-duration:5.5s;-moz-animation-duration:5.5s;animation-duration:5.5s;-webkit-animation-delay:1s;-moz-animation-delay:1s;animation-delay:1s;}
