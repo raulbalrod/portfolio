@@ -136,7 +136,6 @@ footer ul{
     display: flex;
     justify-content: center;
     align-items: center;
-
     background-color: #30303D;
     transition: 0.5s;
 }
@@ -195,7 +194,6 @@ footer ul{
 
 
 /* About css */
-
 #About h2 {
     font-size: 40px;
 }
@@ -212,8 +210,52 @@ footer ul{
     cursor: pointer;
     transition-duration: 1s;
 }
-.description-left h5, .description-left h3 {
+.description-left h4, .description-left h3 {
     text-align: center;
+}
+.portfolio-link-about {
+    font-weight: bold;
+    font-size: larger;
+}
+.portfolio-link-about:hover {
+    color: #4ef01d;
+    transition-duration: 0.25s;
+}
+.style-name-about {
+    font-weight: bold;
+    font-size: larger;
+}
+
+/* Animation name */
+.animation-name-2 {
+    position: relative;
+}
+.animation-name-2::before,
+.aniamation-name-2::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.animation-name-2::before {
+    background-color: #29292c;
+    animation: writer 3s steps(42) 1s forwards;
+}
+.animation-name-2::after {
+    width: 3px;
+    background: #000;
+    animation: writer 3s steps(42) 1s forwards, blink 1s infinite;
+}
+@keyframes writer {
+    to {left: 94%;}
+}
+  
+@keyframes blink {
+    to {
+      background: transparent;
+    }
 }
 /* Skills */
 .lenguage{
@@ -305,9 +347,6 @@ footer ul{
     margin-top: 5px;
     margin-bottom: 5px;
 }
-
-/* Animations scroll */
-
 
 /* Animations skills */
 
@@ -523,7 +562,7 @@ footer ul{
         margin-bottom: 15px;
         margin-top: 15px;
     }
-    .description-left h3 {
+    .description-left h3, .description-left h4 {
         text-align: left;
     }
     .description-right p {
@@ -633,7 +672,7 @@ footer ul{
         color: #fff;
     }
     .button-repository-mobile:hover, .right-projects-mobile:hover{
-        box-shadow: inset 0px 0px 0px 2px #8af16a;
+        box-shadow: inset 0px 0px 0px 2px #4ef01d;
         cursor: pointer;
         transition-duration: 1s;
     }
@@ -643,7 +682,6 @@ footer ul{
     .left-projects-mobile h4 {
         margin-bottom: 15px;
     }
-
 }
 
 @media (min-width: 768px) {
