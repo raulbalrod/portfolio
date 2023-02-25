@@ -521,13 +521,17 @@ footer ul{
     body {
         margin: 0;
     }
-  
+    
+    .content {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
     .imgLogo  {
         min-width: 100%;
         margin: auto;  
     }
     nav {
-        visibility: hidden;
+        display: none;
     }
 
     .description {
@@ -535,7 +539,6 @@ footer ul{
         margin: 0;
         display: flex;
         flex-direction: column;
-        margin-bottom: 100px;
     }
     .description-left {
         margin-bottom: 15px;
@@ -595,25 +598,6 @@ footer ul{
     }
     .description-right:hover {
         padding: 15px;
-    }
-
-    .enterprise {
-        display: flex;
-        flex-direction: column;
-        width: 90%;
-        height: 500px;
-        text-align: center;
-    }
-    .logo-enterprise {
-        margin: auto;
-    }
-    .experiences_content {
-        margin-top: 0;
-        margin-bottom: 20px;
-    }
-    .experiences_content h2 {
-        margin-top: 10px;
-        margin-bottom: 15px;
     }
 
     .projects-container-mobile {
