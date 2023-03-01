@@ -85,6 +85,8 @@ nav ul li a:hover{
 
 .description .description-left{
     margin-right: 120px;
+    display: flex;
+    flex-direction: column;
 }
 
 .description .description-left img{
@@ -93,6 +95,17 @@ nav ul li a:hover{
     border-radius: 100px;
     background-color: #171b1e;
     padding: 4px 4px;
+}
+.btn {
+    margin-top: 15px;
+    background-color: #4ef01d;
+    border: none;
+    border-radius: 25px;
+    color: #171b1e;
+    padding: 12px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .description h3 {
@@ -565,7 +578,7 @@ footer ul{
         height: 300px;
     }
     .ext {
-        width: 100px;
+        width: 60%;
     }
     #studies {
         width: 100%;
@@ -583,7 +596,7 @@ footer ul{
         height: 100px;
     }
     .study_card .logo {
-        margin: 0 25px;
+        margin: auto 15%;
     }
     .study_card h3 {
         font-size: 15px;
