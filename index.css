@@ -1,7 +1,9 @@
 *{
     margin: 0;
 }
-
+#presentacion-web {
+    padding: 50px;
+}
 body{
     font-family: 'Inter', sans-serif;
     background-color: #29292c;
@@ -69,7 +71,6 @@ nav ul li a:hover{
     transition-timing-function: linear;
 }
 
-
 .description-section h2, .studies-h2, .experiences-h2,.project-h2, .h2-Skills{
     font-size: 40px;
 }
@@ -83,13 +84,14 @@ nav ul li a:hover{
 }
 
 .description .description-left{
-    margin-right: 120px;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
 }
-
 .description .description-left img{
     width: 200px;
     height: 200px;
-    border-radius: 100px;
+    border-radius: 50%;
     background-color: #171b1e;
     padding: 4px 4px;
 }
@@ -107,6 +109,22 @@ nav ul li a:hover{
 .description .description-right p {
     margin-top: 20px;
     font-size: large;
+}
+.btn {
+    margin-top: 15px;
+    background-color: #4ef01d;
+    border: none;
+    border-radius: 25px;
+    color: #171b1e;
+    padding: 12px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+.btn:hover {
+    background-color: #171b1e;
+    color: #4ef01d;
+    transition-duration: 0.5s;
 }
  
 footer h4{
@@ -226,37 +244,14 @@ footer ul{
     font-weight: bold;
     font-size: larger;
 }
-
-/* Animation name */
-.animation-name-2 {
-    position: relative;
-}
-.animation-name-2::before,
-.aniamation-name-2::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
-.animation-name-2::before {
-    background-color: #29292c;
-    animation: writer 3s steps(42) 1s forwards;
-}
-.animation-name-2::after {
-    width: 3px;
-    background: #000;
-    animation: writer 3s steps(42) 1s forwards, blink 1s infinite;
-}
-@keyframes writer {
-    to {left: 94%;}
-}
-  
-@keyframes blink {
-    to {
-      background: transparent;
-    }
+.description-right:hover {
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur( 9px );
+    -webkit-backdrop-filter: blur( 9px );
+    border-radius: 25px;
+    padding-bottom: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 /* Skills */
 .lenguage{
@@ -543,54 +538,42 @@ footer ul{
     body {
         margin: 0;
     }
-  
-    .imgLogo  {
-        min-width: 100%;
-        margin: auto;  
+    
+    .content {
+        margin-left: 2%;
+        margin-right: 2%;
     }
-    nav {
-        visibility: hidden;
+    nav, hr, .btn {
+        display: none;
     }
 
+    .home1 {
+        padding: 0;
+    }
     .description {
-        width: 100%;
-        margin: 0;
         display: flex;
         flex-direction: column;
-        margin-bottom: 100px;
     }
     .description-left {
-        margin-bottom: 15px;
-        margin-top: 15px;
+        margin: 0;
     }
-    .description-left h3, .description-left h4 {
-        text-align: left;
+    .description .description-left img{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: #171b1e;
+        padding: 4px 4px;
     }
-    .description-right p {
+    .description-left h3, .description-left h4, .description-right P {
         text-align: left;
+
+    }
+    .description-right:hover {
+        padding: 15px;
+        margin: 15px
     }
 
-    #About {
-        width: 100%;
-    }
-    .sectionLenguages {
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-    }
-    .content-About {
-        width: 90%;
-        margin-top: 25px;
-        height: 300px;
-    }
-    .ext {
-        width: 100px;
-    }
-    #studies {
-        width: 100%;
-    }
     .studies_section {
-        margin: 0;
         display: flex;
         flex-direction: column;
     }
@@ -602,7 +585,7 @@ footer ul{
         height: 100px;
     }
     .study_card .logo {
-        margin: 0 25px;
+        margin: auto 20%;
     }
     .study_card h3 {
         font-size: 15px;
@@ -610,29 +593,19 @@ footer ul{
     .study_card p {
         font-size: 10px;
     }
-    .experiences-section {
-        padding: 50px 0;
-        display: flex;
-        justify-content: left;
-    }
 
-    .enterprise {
+    .sectionLenguages {
         display: flex;
         flex-direction: column;
-        width: 90%;
-        height: 500px;
-        text-align: center;
-    }
-    .logo-enterprise {
         margin: auto;
     }
-    .experiences_content {
-        margin-top: 0;
-        margin-bottom: 20px;
+    .content-About {
+        width: 90%;
+        margin-top: 25px;
+        height: 300px;
     }
-    .experiences_content h2 {
-        margin-top: 10px;
-        margin-bottom: 15px;
+    .ext {
+        width: 60%;
     }
 
     .projects-container-mobile {

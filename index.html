@@ -7,18 +7,20 @@
     <title>Raul Ballestero</title>
 
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="icon" href="images/logo/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
     <div class="content">
         <header>
-            <div class="imgLogo">
+            <div class="imgLogo"  data-aos="fade-right">
                 <a href="index.html">
                     <img src="images/logo/logo.png">
                 </a>
             </div>
-            <nav>
+            <nav data-aos="fade-left"> 
                 <ul>
                     <li class="home">
                         <a href="#presentacion-web"><h3>About Me</h3></a>
@@ -38,14 +40,15 @@
         
         <div id="presentacion-web" class="home1">
             <section class="description-section">
-                <h2>About me</h2>
+                <h2 data-aos="fade-left">About me</h2>
                 <div class="description">
-                    <div class="description-left">
+                    <div class="description-left"  data-aos="fade-right">
                         <img src="images/photos/profile.PNG">
                         <h3 class="animation-name-2">Raúl Ballestero</h3>
                         <h4 class="animation-name">Frontend Developer</h4>
+                        <a class="btn" href="docs/cv.pdf" download="docs/cv.pdf"><i class="fa fa-download"></i> Download CV</a>
                     </div>
-                    <div class="description-right" style="text-align: center; word-spacing: 2px;">
+                    <div class="description-right" style="text-align: center; word-spacing: 2px;" data-aos="fade-left">
                         <p>
                             I'm <span class="style-name-about">Raul</span>, a 19 years old Front-end Developer, from Spain.
                         </p>
@@ -81,8 +84,8 @@
         </div>
         <hr>
 
-        <div id="studies">
-            <h2 class="h2-Skills">Part of my studies</h2>
+        <div id="studies" data-aos="fade-right">
+            <h2 class="h2-Skills" data-aos="fade-left">Part of my studies</h2>
             <section class="studies_section">
                 <div>
                     <div class="study_card">
@@ -133,9 +136,9 @@
         <hr>
 
         <div id="about">
-            <h2 class="h2-Skills">Stack</h2>
+            <h2 class="h2-Skills" data-aos="fade-left">Stack</h2>
             <section class="sectionLenguages">
-                <div class="content-About">
+                <div class="content-About" data-aos="fade-right">
                     <h3>FRONTEND</h3>
                     <div class="lenguage">
                         <h4>HTML5</h4>
@@ -160,7 +163,7 @@
                     </div>
                 </div>
         
-                <div class="content-About">
+                <div class="content-About" data-aos="fade-left">
                     <h3>BACKEND</h3>
                     <div class="lenguage">
                         <h4>Java</h4>
@@ -191,10 +194,10 @@
 
         <div id="projects">
             <section class="container">
-                <h2 class="project-h2">Projects</h2>
+                <h2 class="project-h2" data-aos="fade-left">Projects</h2>
                 <div class="cards row">
                     
-                    <div class="card row">
+                    <div class="card row" data-aos="fade-right">
                         <div id="kotlin" class="card body">
                             <div class="title">
                                 <h2 class="title-h2">Kotlin</h2>
@@ -216,7 +219,7 @@
                         </div>
                     </div>
 
-                    <div class="card row">
+                    <div class="card row" data-aos="fade-left">
                         <div id="loubsite" class="card body">
                             <div class="title">
                                 <h2 class="title-h2">Loubsite</h2>
@@ -246,10 +249,10 @@
             </section>
 
             <section class="projects-container-mobile">
-                <h2 class="project-h2">Projects</h2>
+                <h2 class="project-h2" data-aos="fade-right">Projects</h2>
                 <div class="projects-mobile">
                     <div class="kotlin">
-                        <div class="left-projects-mobile">
+                        <div class="left-projects-mobile" data-aos="fade-left">
                             <h1>Kotlin</h1>
                             <div class="right-projects-mobile">
                                 <img src="images/bg/kotlin-bg-mobile.png" width="200px">
@@ -269,7 +272,7 @@
                         </div>
             
                     </div>
-                    <div class="kotlin">
+                    <div class="kotlin" data-aos="fade-right">
                         <div class="left-projects-mobile">
                             <h1>Loubsite</h1>
                             <div class="right-projects-mobile">
@@ -294,7 +297,7 @@
         </div>
     </div>
 
-    <footer id="footer">
+    <footer id="footer" data-aos="fade-up">
         <h4>Raul Ballestero © 2023</h4>
         <ul class="ul-footer">
             <li>
@@ -310,13 +313,18 @@
                 <a href="https://github.com/raulbalrod" class="titulo">Github</a>
             </li>
             <li>
-                <a href="www.linkedin.com/in/raulbalrod" class="icon">
+                <a href="https://www.linkedin.com/in/raulbalrod/" class="icon">
                     <img src="images/logo/linkedin.png">
                 </a>
-                <a href="www.linkedin.com/in/raulbalrod" class="titulo">Linkedin</a>
+                <a href="https://www.linkedin.com/in/raulbalrod/" class="titulo">Linkedin</a>
             </li>
         </ul>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+       AOS.init();
+    </script>
 
     <div class="tpl-snow">
         <div></div>
