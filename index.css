@@ -540,10 +540,21 @@ footer ul{
     }
     
     .content {
+<<<<<<< HEAD
         margin-left: 2%;
         margin-right: 2%;
     }
     nav, hr, .btn {
+=======
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .imgLogo  {
+        min-width: 100%;
+        margin: auto;  
+    }
+    nav {
+>>>>>>> 509d772e60ccac4257fe9026bea3eba79ed8837a
         display: none;
     }
 
@@ -593,6 +604,7 @@ footer ul{
     .study_card p {
         font-size: 10px;
     }
+<<<<<<< HEAD
 
     .sectionLenguages {
         display: flex;
@@ -606,6 +618,15 @@ footer ul{
     }
     .ext {
         width: 60%;
+=======
+    .experiences-section {
+        padding: 50px 0;
+        display: flex;
+        justify-content: left;
+    }
+    .description-right:hover {
+        padding: 15px;
+>>>>>>> 509d772e60ccac4257fe9026bea3eba79ed8837a
     }
 
     .projects-container-mobile {
