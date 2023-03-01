@@ -84,14 +84,13 @@ nav ul li a:hover{
 }
 
 .description .description-left{
-    margin-right: 10%;
-    display: flex;
-    flex-direction: column;
+    margin-right: 120px;
 }
+
 .description .description-left img{
     width: 200px;
     height: 200px;
-    border-radius: 50%;
+    border-radius: 100px;
     background-color: #171b1e;
     padding: 4px 4px;
 }
@@ -109,22 +108,6 @@ nav ul li a:hover{
 .description .description-right p {
     margin-top: 20px;
     font-size: large;
-}
-.btn {
-    margin-top: 15px;
-    background-color: #4ef01d;
-    border: none;
-    border-radius: 25px;
-    color: #171b1e;
-    padding: 12px 15px;
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: bold;
-}
-.btn:hover {
-    background-color: #171b1e;
-    color: #4ef01d;
-    transition-duration: 0.5s;
 }
  
 footer h4{
@@ -540,12 +523,6 @@ footer ul{
     }
     
     .content {
-<<<<<<< HEAD
-        margin-left: 2%;
-        margin-right: 2%;
-    }
-    nav, hr, .btn {
-=======
         margin-left: 5%;
         margin-right: 5%;
     }
@@ -554,37 +531,47 @@ footer ul{
         margin: auto;  
     }
     nav {
->>>>>>> 509d772e60ccac4257fe9026bea3eba79ed8837a
         display: none;
     }
 
-    .home1 {
-        padding: 0;
-    }
     .description {
+        width: 100%;
+        margin: 0;
         display: flex;
         flex-direction: column;
     }
     .description-left {
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+    .description-left h3, .description-left h4 {
+        text-align: left;
+    }
+    .description-right p {
+        text-align: left;
+    }
+
+    #About {
+        width: 100%;
+    }
+    .sectionLenguages {
+        display: flex;
+        flex-direction: column;
         margin: 0;
     }
-    .description .description-left img{
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        background-color: #171b1e;
-        padding: 4px 4px;
+    .content-About {
+        width: 90%;
+        margin-top: 25px;
+        height: 300px;
     }
-    .description-left h3, .description-left h4, .description-right P {
-        text-align: left;
-
+    .ext {
+        width: 100px;
     }
-    .description-right:hover {
-        padding: 15px;
-        margin: 15px
+    #studies {
+        width: 100%;
     }
-
     .studies_section {
+        margin: 0;
         display: flex;
         flex-direction: column;
     }
@@ -596,7 +583,7 @@ footer ul{
         height: 100px;
     }
     .study_card .logo {
-        margin: auto 20%;
+        margin: 0 25px;
     }
     .study_card h3 {
         font-size: 15px;
@@ -604,21 +591,6 @@ footer ul{
     .study_card p {
         font-size: 10px;
     }
-<<<<<<< HEAD
-
-    .sectionLenguages {
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-    }
-    .content-About {
-        width: 90%;
-        margin-top: 25px;
-        height: 300px;
-    }
-    .ext {
-        width: 60%;
-=======
     .experiences-section {
         padding: 50px 0;
         display: flex;
@@ -626,7 +598,6 @@ footer ul{
     }
     .description-right:hover {
         padding: 15px;
->>>>>>> 509d772e60ccac4257fe9026bea3eba79ed8837a
     }
 
     .projects-container-mobile {
