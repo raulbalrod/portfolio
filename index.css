@@ -107,6 +107,11 @@ nav ul li a:hover{
     font-size: 20px;
     font-weight: bold;
 }
+.btn:hover {
+    background-color: #171b1e;
+    color: #4ef01d;
+    transition-duration: 0.5s;
+}
 
 .description h3 {
     text-align: center;
