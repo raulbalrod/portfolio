@@ -138,8 +138,8 @@ footer {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: space-evenly;
-    width: 80%;
+    justify-content: center;
+    width: fit-content;
     margin: 1rem auto;
     gap: 32px;
 }
@@ -206,19 +206,46 @@ footer {
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
-    width: 60%;
+    width: fit-content;
     margin: 1rem auto;
     gap: 32px;
 }
 
-#Skills .skills-section img {
-    width: fit-content;
+#Skills .skills-section div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 130px;
     padding: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
     border-radius: 15px;
     background: rgb(20,20,43);
     background: linear-gradient(339deg, rgba(20,20,43,1) 0%, rgba(224,228,240,0) 100%); 
     border: #CBD5E1 1px solid;
     box-shadow: 3px 6px 6px 0px rgba(255,255,255,0.15);
+}
+
+@media only screen and (max-width: 768px) {
+    header nav {
+        display: none;
+    }
+
+    #About-us {
+        transform: scale(0.8);
+    }
+    
+    #About-us .about-us-info {
+        flex-direction: column;
+        gap: 16px;
+    }
+    
+    #About-us .about-us-info div {
+        width: fit-content;
+    }
+    
+    #Skills .skills-section {
+        width: fit-content;
+        margin: 1rem auto;
+        gap: 32px;
+    }
 }
