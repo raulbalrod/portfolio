@@ -1,0 +1,224 @@
+body {
+    margin: 0;
+    background: rgb(92,91,139);
+    background: linear-gradient(27deg, rgba(92,91,139,1) 5%, rgba(20,20,43,1) 91%);
+    font-family: 'Inter', sans-serif;
+}
+
+header, footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    color: #CBD5E1;
+    background: linear-gradient(0deg, rgba(255,255,255,0.4) 0%,
+     rgba(255,255,255,0.1) 100%); 
+    backdrop-filter: blur(5px);
+}
+
+header nav ul, header ul, footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+header a {
+    text-decoration: none;
+    color: #CBD5E1;
+}
+
+header ul .btn-lets-work {
+    text-decoration: none;
+    background-color: #CBD5E1;
+    color: #14142B;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 10px;
+}
+
+
+footer {
+    list-style: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#About-us {
+    padding: 80px;
+}
+
+#About-us .about-us-info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#About-us .about-us-info div {
+    width: 50%;
+    color: #CBD5E1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#About-us div h5 {
+    -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(180deg,#0ac9e8 15%,#4661fc 90%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    font-size: 26px;
+    margin: 0;
+}
+
+#About-us div h1 {
+    font-size: 64px;
+    margin: 0;
+}
+
+#About-us div h1 span {
+    -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(180deg,#0ac9e8 15%,#4661fc 90%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+}
+
+#About-us div ul, .about-us-btns {
+    padding: 0;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+}
+
+#About-us p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#About-us p a {
+    text-decoration: none;
+    -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(180deg,#0ac9e8 15%,#4661fc 90%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    font-weight: 700;
+}
+
+#About-us .btn-lets-work {
+    text-decoration: none;
+    background-color: #CBD5E1;
+    color: #14142B;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    width: fit-content;
+}
+
+
+#Projects h1, #Skills h1 {
+    text-decoration: none;
+    -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(180deg,#0ac9e8 15%,#4661fc 90%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    font-size: 54px;
+    text-align: center;
+}
+
+#Projects .projects-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 1rem auto;
+    gap: 32px;
+}
+
+#Projects .cart-project {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 2px solid #CBD5E1;
+    color: #CBD5E1;
+    border-radius: 10px;
+    padding: 10px;
+    width: fit-content;
+    height: 400px;
+}
+
+#Projects .cart-project img {
+    border-radius: 10px;
+}
+#Projects .cart-project h3 {
+    margin: 6px;
+}
+
+#Projects .cart-project .project-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#Projects .cart-project .project-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #CBD5E1;
+}
+
+#Projects .cart-project ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    list-style: none;
+    padding-left: 0;
+    width: fit-content;
+}
+
+#Projects .cart-project ul li {
+    border: 1px solid #CBD5E1;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+}
+
+
+#Skills {
+    padding: 40px;
+}
+
+#Skills .skills-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    width: 60%;
+    margin: 1rem auto;
+    gap: 32px;
+}
+
+#Skills .skills-section img {
+    width: fit-content;
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 15px;
+    background: rgb(20,20,43);
+    background: linear-gradient(339deg, rgba(20,20,43,1) 0%, rgba(224,228,240,0) 100%); 
+    border: #CBD5E1 1px solid;
+    box-shadow: 3px 6px 6px 0px rgba(255,255,255,0.15);
+}
