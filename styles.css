@@ -1,19 +1,31 @@
 body {
     margin: 0;
-    background: rgb(92,91,139);
-    background: linear-gradient(27deg, rgba(92,91,139,1) 5%, rgba(20,20,43,1) 91%);
+    background: rgb(36,38,68);
+    background: linear-gradient(135deg, rgba(36,38,68,1) 22%, rgba(241,196,15,1) 94%);  
     font-family: 'Inter', sans-serif;
 }
 
-header, footer {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px;
-    color: #CBD5E1;
-    background: linear-gradient(0deg, rgba(255,255,255,0.4) 0%,
+    padding: 32px;
+    color: #cbd5e1;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.123) 0%,
      rgba(255,255,255,0.1) 100%); 
     backdrop-filter: blur(5px);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px;
+    color: #cbd5e1;
+    background-color: #030328;
+    list-style: none;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 header nav ul, header ul, footer ul {
@@ -22,30 +34,23 @@ header nav ul, header ul, footer ul {
     align-items: center;
     gap: 25px;
     list-style: none;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 700;
 }
 
 header a {
     text-decoration: none;
-    color: #CBD5E1;
+    color: #cbd5e1;
 }
 
 header ul .btn-lets-work {
     text-decoration: none;
-    background-color: #CBD5E1;
-    color: #14142B;
+    background-color: #cbd5e1;
+    color: #14142b;
     padding: 10px;
     padding-left: 30px;
     padding-right: 30px;
     border-radius: 10px;
-}
-
-
-footer {
-    list-style: none;
-    font-size: 18px;
-    font-weight: 600;
 }
 
 #About-us {
@@ -60,7 +65,7 @@ footer {
 
 #About-us .about-us-info div {
     width: 50%;
-    color: #CBD5E1;
+    color: #cbd5e1;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -68,7 +73,7 @@ footer {
 
 #About-us div h5 {
     -webkit-text-fill-color: transparent;
-    background: -webkit-linear-gradient(180deg,#0ac9e8 15%,#4661fc 90%);
+    background: -webkit-linear-gradient(180deg, rgb(203, 213, 225) 15%, rgba(241,196,15,1) 95%);
     background-clip: border-box;
     -webkit-background-clip: text;
     font-size: 26px;
@@ -82,7 +87,7 @@ footer {
 
 #About-us div h1 span {
     -webkit-text-fill-color: transparent;
-    background: -webkit-linear-gradient(180deg,#0ac9e8 15%,#4661fc 90%);
+    background: -webkit-linear-gradient(180deg, rgb(114, 114, 160) 15%, rgba(241,196,15,1) 95%);
     background-clip: border-box;
     -webkit-background-clip: text;
 }
@@ -104,7 +109,7 @@ footer {
 #About-us p a {
     text-decoration: none;
     -webkit-text-fill-color: transparent;
-    background: -webkit-linear-gradient(180deg,#0ac9e8 15%,#4661fc 90%);
+    background: -webkit-linear-gradient(180deg, rgb(114, 114, 160) 15%, rgba(241,196,15,1) 95%);
     background-clip: border-box;
     -webkit-background-clip: text;
     font-weight: 700;
@@ -112,7 +117,7 @@ footer {
 
 #About-us .btn-lets-work {
     text-decoration: none;
-    background-color: #CBD5E1;
+    background-color: #cbd5e1;
     color: #14142B;
     padding: 10px;
     padding-left: 30px;
@@ -125,11 +130,7 @@ footer {
 
 
 #Projects h1, #Skills h1 {
-    text-decoration: none;
-    -webkit-text-fill-color: transparent;
-    background: -webkit-linear-gradient(180deg,#0ac9e8 15%,#4661fc 90%);
-    background-clip: border-box;
-    -webkit-background-clip: text;
+    color: #cbd5e1;
     font-size: 54px;
     text-align: center;
 }
@@ -148,8 +149,8 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 2px solid #CBD5E1;
-    color: #CBD5E1;
+    border: 2px solid #cbd5e1;
+    color: #cbd5e1;
     border-radius: 10px;
     padding: 10px;
     width: fit-content;
@@ -175,7 +176,7 @@ footer {
     align-items: center;
     gap: 8px;
     text-decoration: none;
-    color: #CBD5E1;
+    color: #cbd5e1;
 }
 
 #Projects .cart-project ul {
@@ -189,7 +190,7 @@ footer {
 }
 
 #Projects .cart-project ul li {
-    border: 1px solid #CBD5E1;
+    border: 1px solid #cbd5e1;
     padding: 5px;
     padding-left: 10px;
     padding-right: 10px;
@@ -206,23 +207,28 @@ footer {
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
-    width: fit-content;
-    margin: 1rem auto;
-    gap: 32px;
+    max-width: 1080px;
+    margin: 4rem auto;
+    gap: 64px;
 }
 
 #Skills .skills-section div {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100px;
     height: 130px;
     padding: 20px;
     border-radius: 15px;
-    background: rgb(20,20,43);
-    background: linear-gradient(339deg, rgba(20,20,43,1) 0%, rgba(224,228,240,0) 100%); 
-    border: #CBD5E1 1px solid;
+    background: rgb(36,38,68);
+    background: linear-gradient(135deg, rgba(36,38,68,1) 0%, rgba(98,86,52,1) 59%, rgba(241,196,15,1) 100%);
+    border: #cbd5e1 2px solid;
     box-shadow: 3px 6px 6px 0px rgba(255,255,255,0.15);
+}
+
+#Skills .skills-section div h3 {
+    color: #cbd5e1;
 }
 
 @media only screen and (max-width: 768px) {
