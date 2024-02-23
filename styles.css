@@ -43,14 +43,34 @@ header a {
     color: #cbd5e1;
 }
 
+header nav a:hover {
+    font-size: 24px;
+    color: rgba(241, 196, 15, 1);
+}
+
+footer li:hover {
+    transform: scale(1.2);
+}
+
+
+header img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
 header ul .btn-lets-work {
     text-decoration: none;
     background-color: #cbd5e1;
     color: #14142b;
+    font-size: 18px;
     padding: 10px;
     padding-left: 30px;
     padding-right: 30px;
     border-radius: 10px;
+}
+
+header ul .btn-lets-work:hover {
+    font-size: 20px;
 }
 
 #About-us {
@@ -61,6 +81,11 @@ header ul .btn-lets-work {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+#About-us .about-us-info img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
 }
 
 #About-us .about-us-info div {
@@ -128,6 +153,9 @@ header ul .btn-lets-work {
     width: fit-content;
 }
 
+#About-us .btn-lets-work:hover {
+    font-size: 18px;
+}
 
 #Projects h1, #Skills h1, #Education h1 {
     color: #cbd5e1;
@@ -157,6 +185,11 @@ header ul .btn-lets-work {
     height: 400px;
 }
 
+#Projects .cart-project:hover {
+    background-color: rgba(3, 3, 40, 0.15);
+    transform: scale(1.1);
+}
+
 #Projects .cart-project img {
     border-radius: 10px;
 }
@@ -179,6 +212,10 @@ header ul .btn-lets-work {
     color: #cbd5e1;
 }
 
+#Projects .cart-project .project-links a:hover {
+    transform: scale(1.1);
+}
+
 #Projects .cart-project ul {
     display: flex;
     justify-content: center;
@@ -195,6 +232,14 @@ header ul .btn-lets-work {
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 10px;
+    cursor: pointer;
+}
+
+#Projects .cart-project ul li:hover {
+    -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(180deg, rgb(203, 213, 225) 15%, rgba(241,196,15,1) 95%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
 }
 
 #Education .education-div { 
@@ -202,16 +247,13 @@ header ul .btn-lets-work {
     justify-content: space-around;
     align-items: center;
     margin-bottom: 12px;
-    color: #cbd5e1;
 }
 
 #Education .education-div img { 
     width: 300px;
     cursor: pointer;
     border-radius: 10px;
-    -webkit-box-shadow: 7px 7px 10px -2px rgba(241,196,15,1);
-    -moz-box-shadow: 7px 7px 10px -2px  rgba(241,196,15,1);
-    box-shadow: 7px 7px 10px -2px rgba(241,196,15,1);
+    box-shadow: 3px 6px 6px 0px rgba(255,255,255,0.15);
 }
 
 #Education .education-div img:hover {
@@ -222,28 +264,61 @@ header ul .btn-lets-work {
     width: 350px;
     text-align: center;
 }
+
+#Education h2 {
+    color: #14142b;
+    font-size: 24px;
+}
+
+#Education p {
+    color: aliceblue;
+    font-weight: 600;
+    font-size: larger;
+}
+
+#Education h5 {
+    color: #cbd5e1;
+}
    
 #Skills {
     padding: 40px;
 }
 
-#Skills .skills-section {
+#Skills .skills-container {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-around;
     max-width: 1080px;
-    margin: 4rem auto;
+    margin: 1rem auto;
     gap: 64px;
 }
 
-#Skills .skills-section div {
+#Skills .skills-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100px;
-    height: 130px;
+}
+
+#Skills .skills-section .languages {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 360px;
+    margin: 1rem auto;
+    gap: 20px;
+}
+
+#Skills .skills-section .skill-card-programming {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 70px;
+    height: 90px;
     padding: 20px;
     border-radius: 15px;
     background: rgb(36,38,68);
@@ -252,9 +327,26 @@ header ul .btn-lets-work {
     box-shadow: 3px 6px 6px 0px rgba(255,255,255,0.15);
 }
 
-#Skills .skills-section div h3 {
+#Skills .skills-section .skill-card-programming:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#Skills .skills-section h2 {
     color: #cbd5e1;
 }
+
+#Skills .skills-section div h3 {
+    color: #cbd5e1;
+    margin: 0;
+    text-align: center;
+}
+
+#Skills .skills-section div h4 {
+    color: #cbd5e1;
+    margin: 0;
+    text-align: center;
+}
+
 
 @media only screen and (max-width: 878px) {
     header nav {
