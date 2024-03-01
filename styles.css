@@ -1,33 +1,36 @@
+/* Styles for the body */
 body {
     margin: 0;
-    background: rgb(36,38,68);
-    background: linear-gradient(135deg, rgba(36,38,68,1) 22%, rgba(241,196,15,1) 94%);  
-    font-family: 'Inter', sans-serif;
+    background: rgb(36,38,68); /* Fallback background color */
+    background: linear-gradient(135deg, rgba(36,38,68,1) 22%, rgba(241,196,15,1) 94%); /* Gradient background */
+    font-family: 'Inter', sans-serif; /* Font family */
 }
 
+/* Styles for the header */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 32px;
-    color: #cbd5e1;
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.123) 0%,
-     rgba(255,255,255,0.1) 100%); 
-    backdrop-filter: blur(5px);
+    color: #cbd5e1; /* Text color */
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.123) 0%, rgba(255,255,255,0.1) 100%); /* Gradient background */
+    backdrop-filter: blur(5px); /* Blur effect for background */
 }
 
+/* Styles for the footer */
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 32px;
-    color: #cbd5e1;
-    background-color: #030328;
+    color: #cbd5e1; /* Text color */
+    background-color: #030328; /* Background color */
     list-style: none;
     font-size: 18px;
     font-weight: 600;
 }
 
+/* Styles for navigation links */
 header nav ul, header ul, footer ul {
     display: flex;
     justify-content: center;
@@ -38,30 +41,34 @@ header nav ul, header ul, footer ul {
     font-weight: 700;
 }
 
+/* Styles for links in the header */
 header a {
     text-decoration: none;
-    color: #cbd5e1;
+    color: #cbd5e1; /* Text color */
 }
 
+/* Styles for navigation links on hover */
 header nav a:hover {
     font-size: 24px;
-    color: rgba(241, 196, 15, 1);
+    color: rgba(241, 196, 15, 1); /* Text color on hover */
 }
 
+/* Styles for list items in the footer on hover */
 footer li:hover {
     transform: scale(1.2);
 }
 
-
+/* Styles for images in the header on hover */
 header img:hover {
     cursor: pointer;
     transform: scale(1.2);
 }
 
+/* Styles for 'Let's Work' button in the header */
 header ul .btn-lets-work {
     text-decoration: none;
-    background-color: #cbd5e1;
-    color: #14142b;
+    background-color: #cbd5e1; /* Background color */
+    color: #14142b; /* Text color */
     font-size: 14px;
     padding: 10px;
     padding-left: 30px;
@@ -69,34 +76,41 @@ header ul .btn-lets-work {
     border-radius: 10px;
 }
 
+/* Styles for 'Let's Work' button in the header on hover */
 header ul .btn-lets-work:hover {
     font-size: 20px;
 }
 
+/* Styles for the 'About' section */
 #About-us {
     padding: 80px;
 }
 
+/* Styles for the 'About' section content */
 #About-us .about-us-info {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
+/* Styles for images in the 'About' section on hover */
 #About-us .about-us-info img:hover {
     cursor: pointer;
     transform: scale(1.2);
 }
 
+/* Styles for text in the 'About' section */
 #About-us .about-us-info div {
     width: 50%;
-    color: #cbd5e1;
+    color: #cbd5e1; /* Text color */
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
+/* Styles for text in the 'About' section */
 #About-us div h5 {
+    /* Gradient text color */
     -webkit-text-fill-color: transparent;
     background: -webkit-linear-gradient(180deg, rgb(203, 213, 225) 15%, rgba(241,196,15,1) 95%);
     background-clip: border-box;
@@ -105,18 +119,22 @@ header ul .btn-lets-work:hover {
     margin: 0;
 }
 
+/* Styles for text in the 'About' section */
 #About-us div h1 {
     font-size: 64px;
     margin: 0;
 }
 
+/* Styles for text in the 'About' section */
 #About-us div h1 span {
+    /* Gradient text color */
     -webkit-text-fill-color: transparent;
     background: -webkit-linear-gradient(180deg, rgb(114, 114, 160) 15%, rgba(241,196,15,1) 95%);
     background-clip: border-box;
     -webkit-background-clip: text;
 }
 
+/* Styles for text in the 'About' section */
 #About-us div ul, .about-us-btns {
     padding: 0;
     display: flex;
@@ -126,13 +144,16 @@ header ul .btn-lets-work:hover {
     list-style: none;
 }
 
+/* Styles for text in the 'About' section */
 #About-us p {
     font-size: 16px;
     font-weight: 500;
 }
 
+/* Styles for links in the 'About' section */
 #About-us p a {
     text-decoration: none;
+    /* Gradient text color */
     -webkit-text-fill-color: transparent;
     background: -webkit-linear-gradient(180deg, rgb(114, 114, 160) 15%, rgba(241,196,15,1) 95%);
     background-clip: border-box;
@@ -140,10 +161,11 @@ header ul .btn-lets-work:hover {
     font-weight: 700;
 }
 
+/* Styles for 'Let's Work' button in the 'About' section */
 #About-us .btn-lets-work {
     text-decoration: none;
-    background-color: #cbd5e1;
-    color: #14142B;
+    background-color: #cbd5e1; /* Background color */
+    color: #14142B; /* Text color */
     padding: 10px;
     padding-left: 30px;
     padding-right: 30px;
@@ -153,20 +175,24 @@ header ul .btn-lets-work:hover {
     width: fit-content;
 }
 
+/* Styles for images in the 'About' section */
 #About-us ul li img {
     width: 40px;
 }
 
+/* Styles for 'Let's Work' button in the 'About' section on hover */
 #About-us .btn-lets-work:hover {
     font-size: 18px;
 }
 
+/* Styles for heading tags in the 'Projects', 'Skills', and 'Education' sections */
 #Projects h1, #Skills h1, #Education h1 {
-    color: #cbd5e1;
+    color: #cbd5e1; /* Text color */
     font-size: 54px;
     text-align: center;
 }
 
+/* Styles for the 'Projects' section */
 #Projects .projects-section {
     display: flex;
     flex-wrap: wrap;
@@ -177,49 +203,58 @@ header ul .btn-lets-work:hover {
     gap: 32px;
 }
 
+/* Styles for individual projects in the 'Projects' section */
 #Projects .cart-project {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border: 2px solid #cbd5e1;
-    color: #cbd5e1;
+    color: #cbd5e1; /* Text color */
     border-radius: 10px;
     padding: 10px;
     width: fit-content;
     height: 400px;
 }
 
+/* Styles for individual projects in the 'Projects' section on hover */
 #Projects .cart-project:hover {
     background-color: rgba(3, 3, 40, 0.15);
     transform: scale(1.1);
 }
 
+/* Styles for images in individual projects in the 'Projects' section */
 #Projects .cart-project img {
     border-radius: 10px;
 }
+
+/* Styles for project titles in the 'Projects' section */
 #Projects .cart-project h3 {
     margin: 6px;
 }
 
+/* Styles for project links in the 'Projects' section */
 #Projects .cart-project .project-links {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+/* Styles for links in individual projects in the 'Projects' section */
 #Projects .cart-project .project-links a {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 8px;
     text-decoration: none;
-    color: #cbd5e1;
+    color: #cbd5e1; /* Text color */
 }
 
+/* Styles for links in individual projects in the 'Projects' section on hover */
 #Projects .cart-project .project-links a:hover {
     transform: scale(1.1);
 }
 
+/* Styles for languages in individual projects in the 'Projects' section */
 #Projects .cart-project ul {
     display: flex;
     justify-content: center;
@@ -230,22 +265,16 @@ header ul .btn-lets-work:hover {
     width: fit-content;
 }
 
-#Projects .cart-project ul li {
-    border: 1px solid #cbd5e1;
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
+/* Styles for individual languages in individual projects in the 'Projects' section on hover */
 #Projects .cart-project ul li:hover {
+    /* Gradient text color on hover */
     -webkit-text-fill-color: transparent;
     background: -webkit-linear-gradient(180deg, rgb(203, 213, 225) 15%, rgba(241,196,15,1) 95%);
     background-clip: border-box;
     -webkit-background-clip: text;
 }
 
+/* Styles for the 'Education' section */
 #Education .education-div { 
     display: flex;
     justify-content: space-around;
@@ -253,6 +282,7 @@ header ul .btn-lets-work:hover {
     margin-bottom: 12px;
 }
 
+/* Styles for images in the 'Education' section on hover */
 #Education .education-div img { 
     width: 300px;
     cursor: pointer;
@@ -260,34 +290,41 @@ header ul .btn-lets-work:hover {
     box-shadow: 3px 6px 6px 0px rgba(255,255,255,0.15);
 }
 
+/* Styles for images in the 'Education' section on hover */
 #Education .education-div img:hover {
     transform: scale(1.1);
 }
 
+/* Styles for text in the 'Education' section */
 #Education .education-div div {
     width: 350px;
     text-align: center;
 }
 
+/* Styles for heading tags in the 'Education' section */
 #Education h2 {
-    color: #14142b;
+    color: #14142b; /* Text color */
     font-size: 24px;
 }
 
+/* Styles for text in the 'Education' section */
 #Education p {
-    color: aliceblue;
+    color: aliceblue; /* Text color */
     font-weight: 600;
     font-size: larger;
 }
 
+/* Styles for heading tags in the 'Education' section */
 #Education h5 {
-    color: #cbd5e1;
+    color: #cbd5e1; /* Text color */
 }
    
+/* Styles for the 'Skills' section */
 #Skills {
     padding: 40px;
 }
 
+/* Styles for the 'Skills' section container */
 #Skills .skills-container {
     display: flex;
     flex-wrap: wrap;
@@ -298,6 +335,7 @@ header ul .btn-lets-work:hover {
     gap: 64px;
 }
 
+/* Styles for individual sections in the 'Skills' section */
 #Skills .skills-section {
     display: flex;
     flex-direction: column;
@@ -305,6 +343,7 @@ header ul .btn-lets-work:hover {
     align-items: center;
 }
 
+/* Styles for language containers in the 'Skills' section */
 #Skills .skills-section .languages {
     display: flex;
     flex-wrap: wrap;
@@ -315,6 +354,7 @@ header ul .btn-lets-work:hover {
     gap: 20px;
 }
 
+/* Styles for individual skill cards in the 'Skills' section */
 #Skills .skills-section .skill-card-programming {
     display: flex;
     flex-direction: column;
@@ -325,67 +365,81 @@ header ul .btn-lets-work:hover {
     height: 90px;
     padding: 20px;
     border-radius: 15px;
-    background: rgb(36,38,68);
+    background: rgb(36,38,68); /* Background color */
     background: linear-gradient(135deg, rgba(36,38,68,1) 0%, rgba(98,86,52,1) 59%, rgba(241,196,15,1) 100%);
     border: #cbd5e1 2px solid;
     box-shadow: 3px 6px 6px 0px rgba(255,255,255,0.15);
 }
 
+/* Styles for individual skill cards in the 'Skills' section on hover */
 #Skills .skills-section .skill-card-programming:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
+
+/* Styles for headings in individual sections in the 'Skills' section */
 #Skills .skills-section h2 {
-    color: #cbd5e1;
+    color: #cbd5e1; /* Text color */
 }
 
+/* Styles for headings in individual sections in the 'Skills' section */
 #Skills .skills-section div h3 {
-    color: #cbd5e1;
+    color: #cbd5e1; /* Text color */
     margin: 0;
     text-align: center;
 }
 
+/* Styles for headings in individual sections in the 'Skills' section */
 #Skills .skills-section div h4 {
-    color: #cbd5e1;
+    color: #cbd5e1; /* Text color */
     margin: 0;
     text-align: center;
 }
 
-
+/* Media query for smaller screens */
 @media only screen and (max-width: 878px) {
+    /* Hide navigation on smaller screens */
     header nav {
         display: none;
     }
 
+    /* Hide 'Let's Work' button on smaller screens */
     header ul .btn-lets-work {
         display: none;
     }
     
+    /* Hide images in the 'About' section on smaller screens */
     #About-us ul li img {
        display: none;
     }
 
+    /* Scale down the 'About' section on smaller screens */
     #About-us {
         transform: scale(0.8);
     }
     
+    /* Adjust layout of 'About' section content on smaller screens */
     #About-us .about-us-info {
         flex-direction: column;
         gap: 16px;
     }
     
+    /* Adjust layout of 'About' section content on smaller screens */
     #About-us .about-us-info div {
         width: fit-content;
     }
     
+    /* Adjust layout of 'Education' section content on smaller screens */
     #Education .education-div {
         flex-direction: column;
     }
         
+    /* Adjust layout of 'Education' section content on smaller screens */
     #Education #second-edu {
         flex-direction: column-reverse;
     }
 
+    /* Adjust layout of sections in the 'Skills' section on smaller screens */
     #Skills .skills-section {
         width: fit-content;
         margin: 1rem auto;
